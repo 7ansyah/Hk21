@@ -304,3 +304,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     };
 });
+unction reloadPage() {
+            location.reload();
+        }
+
