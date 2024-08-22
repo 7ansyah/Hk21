@@ -24,7 +24,7 @@ h1 {
     font-size: 24px;
     color: blue;
     position: relative;
-    animation: moveText 5s linear infinite;
+    animation: moveText 5s linear infinite, shakeText 0.1s infinite;
 }
 
 @keyframes moveText {
@@ -35,6 +35,22 @@ h1 {
         top: 0;
     }
 }
+
+@keyframes shakeText {
+    0%, 100% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(-2px);
+    }
+    50% {
+        transform: translateX(2px);
+    }
+    75% {
+        transform: translateX(-2px);
+    }
+}
+
 .grid-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
