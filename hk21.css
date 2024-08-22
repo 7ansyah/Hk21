@@ -23,7 +23,6 @@ h1 {
     margin-bottom: 25px;
     font-size: 24px;
     color: blue;
-    h1 {
     position: absolute;
     animation: shakeText 0.1s infinite, moveRandom 5s infinite;
 }
