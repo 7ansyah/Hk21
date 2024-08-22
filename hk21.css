@@ -55,7 +55,7 @@ h1 {
 }
 
 .game-option:hover, .game-option.selected {
-    transform: scale(2.05);
+    transform: scale(1.25);
     border-color: red;
 }
 .game-option p:hover, .game-option p.selected {
