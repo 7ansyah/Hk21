@@ -23,33 +23,53 @@ h1 {
     margin-bottom: 25px;
     font-size: 24px;
     color: blue;
-    position: relative;
-    animation: moveText 5s linear infinite, shakeText 0.1s infinite;
-}
-
-@keyframes moveText {
-    0% {
-        top: 100%;
-    }
-    100% {
-        top: 0;
-    }
+    h1 {
+    position: absolute;
+    animation: shakeText 0.1s infinite, moveRandom 5s infinite;
 }
 
 @keyframes shakeText {
     0%, 100% {
-        transform: translateX(0);
+        transform: translate(0, 0);
     }
     25% {
-        transform: translateX(-2px);
+        transform: translate(-2px, 2px);
     }
     50% {
-        transform: translateX(2px);
+        transform: translate(2px, -2px);
     }
     75% {
-        transform: translateX(-2px);
+        transform: translate(-2px, -2px);
     }
 }
+
+@keyframes moveRandom {
+    0% {
+        top: 50%;
+        left: 50%;
+    }
+    20% {
+        top: 10%;
+        left: 70%;
+    }
+    40% {
+        top: 80%;
+        left: 20%;
+    }
+    60% {
+        top: 30%;
+        left: 90%;
+    }
+    80% {
+        top: 70%;
+        left: 10%;
+    }
+    100% {
+        top: 50%;
+        left: 50%;
+    }
+}
+
 
 .grid-container {
     display: grid;
