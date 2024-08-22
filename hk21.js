@@ -304,7 +304,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     };
 });
-unction reloadPage() {
+function reloadPage() {
             location.reload();
         }
 
