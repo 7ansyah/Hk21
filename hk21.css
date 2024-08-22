@@ -33,7 +33,7 @@ h1 {
 }
 
 .game-option {
-    border: 1px solid #ddd;
+    border: 1px solid #0000FF;
     border-radius: 4px;
     padding: 4px;
     text-align: center;
@@ -50,13 +50,14 @@ h1 {
 .game-option p {
     font-weight: 150;
     font-size: 14px;
-    color: #555;
+    color: #0000FF;
     margin: 2px;
 }
 
-.game-option:hover, .game-option.selected {
+.game-option:hover, .game-option p, .game-option.selected {
     transform: scale(1.05);
-    border-color: #007bff;
+    border-color: red;
+    color: red;
 }
 
 .form-group {
