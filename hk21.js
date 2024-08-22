@@ -304,6 +304,32 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     };
 });
+
+const login = async (clientId, appToken) => {
+    const response = await fetch('https://api.gamepromo.io/promo/login-client', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+            appToken,
+            clientId,
+            clientOrigin: 'deviceid'
+        })
+    });
+
+    console.log('Response status:', response.status);
+    const data = await response.json();
+    console.log('Response data:', data);
+
+    if (!response.ok) {
+        throw new Error('Failed to login');
+    }
+
+    return data.clientToken;
+};
+
+
 function reloadPage() {
             location.reload();
         }
