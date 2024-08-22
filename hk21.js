@@ -100,7 +100,7 @@ document.addEventListener('DOMContentLoaded', () => {
         document.querySelector('.grid-container').style.display = 'none';
         keyCountGroup.style.display = 'none';
 
-        keyCountLabel.innerText = `Number of keys: ${keyCount}`;
+        keyCountLabel.innerText = `Jumlah kunci: ${keyCount}`;
 
         progressBar.style.width = '0%';
         progressText.innerText = '0%';
@@ -116,8 +116,8 @@ document.addEventListener('DOMContentLoaded', () => {
         let progress = 0;
         const updateProgress = (increment, message) => {
             progress += increment;
-            progressBar.style.width = `${progress}%`;
-            progressText.innerText = `${progress}%`;
+            progressBar.style.width = `${progress.toFixed(1)}%`;
+            progressText.innerText = `${progress.toFixed(1)}%`;
             progressLog.innerText = message;
         };
 
@@ -307,4 +307,3 @@ document.addEventListener('DOMContentLoaded', () => {
 function reloadPage() {
             location.reload();
         }
-
