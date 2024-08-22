@@ -24,7 +24,7 @@ h1 {
     font-size: 24px;
     color: blue;
     position: absolute;
-    animation: shakeText 0.1s infinite, moveRandom 5s infinite;
+    animation: moveRandom 10s infinite, shakeText 0.1s infinite;
 }
 
 @keyframes shakeText {
@@ -43,69 +43,112 @@ h1 {
 }
 
 @keyframes moveRandom {
-    0%, 5% {
+    0% {
         opacity: 1;
+        top: 50%;
+        left: 50%;
     }
-    6%, 9% {
+    5% {
         opacity: 0;
+        top: 50%;
+        left: 50%;
     }
-    10%, 15% {
+    10% {
         opacity: 1;
+        top: 40%;
+        left: 10%;
     }
-    16%, 19% {
+    15% {
         opacity: 0;
+        top: 40%;
+        left: 10%;
     }
-    20%, 25% {
+    20% {
         opacity: 1;
+        top: 90%;
+        left: 90%;
     }
-    26%, 29% {
+    25% {
         opacity: 0;
+        top: 90%;
+        left: 90%;
     }
-    30%, 35% {
+    30% {
         opacity: 1;
+        top: 70%;
+        left: 60%;
     }
-    36%, 39% {
+    35% {
         opacity: 0;
+        top: 70%;
+        left: 60%;
     }
-    40%, 45% {
+    40% {
         opacity: 1;
+        top: 10%;
+        left: 70%;
     }
-    46%, 49% {
+    45% {
         opacity: 0;
+        top: 10%;
+        left: 70%;
     }
-    50%, 55% {
+    50% {
         opacity: 1;
+        top: 80%;
+        left: 10%;
     }
-    56%, 59% {
+    55% {
         opacity: 0;
+        top: 80%;
+        left: 10%;
     }
-    60%, 65% {
+    60% {
         opacity: 1;
+        top: 30%;
+        left: 90%;
     }
-    66%, 69% {
+    65% {
         opacity: 0;
+        top: 30%;
+        left: 90%;
     }
-    70%, 75% {
+    70% {
         opacity: 1;
+        top: 40%;
+        left: 80%;
     }
-    76%, 79% {
+    75% {
         opacity: 0;
+        top: 40%;
+        left: 80%;
     }
-    80%, 85% {
+    80% {
         opacity: 1;
+        top: 60%;
+        left: 20%;
     }
-    86%, 89% {
+    85% {
         opacity: 0;
+        top: 60%;
+        left: 20%;
     }
-    90%, 96% {
+    90% {
         opacity: 1;
+        top: 10%;
+        left: 10%;
     }
-    97%, 100% {
+    95% {
         opacity: 0;
+        top: 10%;
+        left: 10%;
+    }
+    100% {
+        opacity: 1;
+        top: 20%;
+        left: 90%;
     }
 }
-
-
 
 .grid-container {
     display: grid;
