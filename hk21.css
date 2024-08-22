@@ -55,7 +55,7 @@ h1 {
 }
 
 .game-option:hover, .game-option.selected {
-    transform: scale(1.25);
+    transform: scale(1.15);
     border-color: red;
 }
 .game-option p:hover, .game-option p.selected {
@@ -114,8 +114,8 @@ button {
     background-color: #007bff;
     color: white;
     border: none;
-    padding: 12px 20px;
-    font-size: 16px;
+    padding: 6px 8px;
+    font-size: 12px;
     border-radius: 8px;
     cursor: pointer;
     transition: background-color 0.3s;
