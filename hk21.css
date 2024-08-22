@@ -43,30 +43,27 @@ h1 {
 }
 
 @keyframes moveRandom {
-    0% {
-        top: 50%;
-        left: 50%;
-    }
-    20% {
-        top: 10%;
-        left: 70%;
-    }
-    40% {
-        top: 80%;
-        left: 20%;
-    }
-    60% {
-        top: 30%;
-        left: 90%;
-    }
-    80% {
-        top: 70%;
-        left: 10%;
-    }
-    100% {
-        top: 50%;
-        left: 50%;
-    }
+    0% { top: 50%; left: 50%; }
+    5% { top: 40%; left: 10%; }
+    10% { top: 90%; left: 90%; }
+    15% { top: 70%; left: 60%; }
+    20% { top: 10%; left: 70%; }
+    25% { top: 80%; left: 10%; }
+    30% { top: 30%; left: 90%; }
+    35% { top: 40%; left: 80%; }
+    40% { top: 60%; left: 20%; }
+    45% { top: 10%; left: 10%; }
+    50% { top: 20%; left: 10%; }
+    55% { top: 90%; left: 30%; }
+    60% { top: 30%; left: 90%; }
+    65% { top: 50%; left: 10%; }
+    70% { top: 40%; left: 50%; }
+    75% { top: 10%; left: 30%; }
+    80% { top: 70%; left: 10%; }
+    85% { top: 90%; left: 70%; }
+    90% { top: 60%; left: 50%; }
+    96% { top: 30%; left: 20%; }
+    100% { top: 20%; left: 90%; }
 }
 
 
