@@ -49,7 +49,9 @@ h1 {
 
 .game-option p {
     font-weight: 150;
+    font-size: 14px;
     color: #555;
+    margin: 2px;
 }
 
 .game-option:hover, .game-option.selected {
