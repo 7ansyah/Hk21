@@ -111,7 +111,7 @@ h1 {
     80% {
         opacity: 1;
         top: 60%;
-        left: 20%;
+        left: 30%;
     }
     85% {
         opacity: 0;
@@ -129,7 +129,88 @@ h1 {
         top: 20%;
         left: 70%;
     }
+    105% {
+        opacity: 0;
+    }
+    110% {
+        opacity: 1;
+        top: 15%;
+        left: 40%;
+    }
+    115% {
+        opacity: 0;
+    }
+    120% {
+        opacity: 1;
+        top: 85%;
+        left: 50%;
+    }
+    125% {
+        opacity: 0;
+    }
+    130% {
+        opacity: 1;
+        top: 25%;
+        left: 20%;
+    }
+    135% {
+        opacity: 0;
+    }
+    140% {
+        opacity: 1;
+        top: 75%;
+        left: 30%;
+    }
+    145% {
+        opacity: 0;
+    }
+    150% {
+        opacity: 1;
+        top: 20%;
+        left: 60%;
+    }
+    155% {
+        opacity: 0;
+    }
+    160% {
+        opacity: 1;
+        top: 40%;
+        left: 50%;
+    }
+    165% {
+        opacity: 0;
+    }
+    170% {
+        opacity: 1;
+        top: 60%;
+        left: 30%;
+    }
+    175% {
+        opacity: 0;
+    }
+    180% {
+        opacity: 1;
+        top: 35%;
+        left: 70%;
+    }
+    185% {
+        opacity: 0;
+    }
+    190% {
+        opacity: 1;
+        top: 50%;
+        left: 10%;
+    }
+    195% {
+        opacity: 0;
+    }
+    200% {
+        opacity: 1;
+        top: 20%;
+        left: 40%;
+    }
 }
+
 
 .grid-container {
     display: grid;
