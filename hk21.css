@@ -20,10 +20,9 @@ body {
 }
 
 h1 {
-    padding: 25px;
     font-size: 24px;
     color: blue;
-    position: absolute;
+    position: relative;
     animation: moveRandom 10s infinite, shakeText 0.1s infinite;
 }
 
