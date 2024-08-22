@@ -29,10 +29,10 @@ h1 {
 
 @keyframes moveText {
     0% {
-        left: 0;
+        bottom: 0;
     }
     100% {
-        left: 100%;
+        up: 100%;
     }
 }
 .grid-container {
