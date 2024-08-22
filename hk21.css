@@ -8,8 +8,6 @@ body {
     height: 100vh;
     margin: 0;
     padding: 0;
-    overflow: hidden;
-    position: relative;
 }
 
 .container {
@@ -26,7 +24,8 @@ h1 {
     font-size: 24px;
     color: blue;
     position: absolute;
-    animation: moveRandom 10s infinite, shakeText 0.1s infinite;
+	z-index: 99;
+    animation: moveRandom 50s infinite, shakeText 0.1s infinite;
 }
 
 @keyframes shakeText {
@@ -45,171 +44,78 @@ h1 {
 }
 @keyframes moveRandom {
     0% {
-        opacity: 1;
-        top: 50%;
+        top: 20%;
         left: 20%;
+        opacity: 1;
     }
     5% {
         opacity: 0;
     }
     10% {
         opacity: 1;
-        top: 40%;
-        left: 10%;
     }
-    15% {
+    12% {
         opacity: 0;
     }
-    20% {
+    15% {
         opacity: 1;
-        top: 90%;
-        left: 50%;
     }
     25% {
         opacity: 0;
     }
     30% {
+        top: 60%;
+        left: 30%;
         opacity: 1;
-        top: 70%;
-        left: 60%;
     }
     35% {
         opacity: 0;
     }
     40% {
         opacity: 1;
-        top: 30%;
-        left: 70%;
     }
-    45% {
+    42% {
         opacity: 0;
     }
-    50% {
+    45% {
         opacity: 1;
-        top: 80%;
-        left: 10%;
     }
     55% {
         opacity: 0;
     }
     60% {
+        top: 20%;
+        left: 50%;
         opacity: 1;
-        top: 30%;
-        left: 20%;
     }
     65% {
         opacity: 0;
     }
     70% {
         opacity: 1;
-        top: 40%;
-        left: 60%;
     }
-    75% {
+    72% {
         opacity: 0;
     }
-    80% {
+    75% {
         opacity: 1;
-        top: 60%;
-        left: 30%;
     }
     85% {
         opacity: 0;
     }
     90% {
+        top: 60%;
+        left: 10%;
         opacity: 1;
-        top: 10%;
-        left: 0%;
     }
     95% {
         opacity: 0;
     }
     100% {
         opacity: 1;
-        top: 20%;
-        left: 70%;
-    }
-    105% {
-        opacity: 0;
-    }
-    110% {
-        opacity: 1;
-        top: 15%;
-        left: 40%;
-    }
-    115% {
-        opacity: 0;
-    }
-    120% {
-        opacity: 1;
-        top: 85%;
-        left: 50%;
-    }
-    125% {
-        opacity: 0;
-    }
-    130% {
-        opacity: 1;
-        top: 25%;
-        left: 20%;
-    }
-    135% {
-        opacity: 0;
-    }
-    140% {
-        opacity: 1;
-        top: 75%;
-        left: 30%;
-    }
-    145% {
-        opacity: 0;
-    }
-    150% {
-        opacity: 1;
-        top: 20%;
-        left: 60%;
-    }
-    155% {
-        opacity: 0;
-    }
-    160% {
-        opacity: 1;
-        top: 40%;
-        left: 50%;
-    }
-    165% {
-        opacity: 0;
-    }
-    170% {
-        opacity: 1;
-        top: 60%;
-        left: 30%;
-    }
-    175% {
-        opacity: 0;
-    }
-    180% {
-        opacity: 1;
-        top: 35%;
-        left: 70%;
-    }
-    185% {
-        opacity: 0;
-    }
-    190% {
-        opacity: 1;
-        top: 50%;
-        left: 10%;
-    }
-    195% {
-        opacity: 0;
-    }
-    200% {
-        opacity: 1;
-        top: 20%;
-        left: 40%;
     }
 }
+
 
 
 .grid-container {
@@ -377,4 +283,23 @@ button:hover {
 #copyStatus {
     margin-top: 15px;
     color: green;
+}
+
+.overlay-button {
+    position: absolute;
+    top:20%;
+    right: 5%;
+    z-index: 9999;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 4px 6px;
+    font-size: 14px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.overlay-button:hover {
+    background-color: #00feee;
 }
