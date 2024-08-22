@@ -22,9 +22,19 @@ body {
 h1 {
     margin-bottom: 25px;
     font-size: 24px;
-    color: #007bff;
+    color: blue;
+    position: relative;
+    animation: moveText 5s linear infinite;
 }
 
+@keyframes moveText {
+    0% {
+        left: 0;
+    }
+    100% {
+        left: 100%;
+    }
+}
 .grid-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
