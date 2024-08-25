@@ -1,68 +1,68 @@
-<!doctype html>
-<html lang="en"> 
-  <head> 
-	<meta charset="UTF-8"> 
-	  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-		<title>HK key by juans</title> 
-		<link rel="stylesheet" href="hk21.css"> 
-		  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&amp;display=swap" rel="stylesheet"> 
-  </head> 
-  <body> 
-	<div class="container"> 
-	  <h1>HK key by juans</h1>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+	  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Game Promo Code Generator</title>
+		<link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="container">
+	  <h1>HK Key by Juans</h1>
 	  <h6>Tiren74n</h6>
-	  <div id="gameSelectContainer" class="grid-container"> 
-		<div class="game-option" data-game="7"> 
-		  <img src="https://cdn.hamsterkombat.io/polysphere/image.webp" alt="Polysphere"> 
-		  <p>Polysphere</p> 
-		</div> 
-		<div class="game-option" data-game="6"> 
-		  <img src="https://cdn.hamsterkombat.io/twerk/image.webp" alt="Twerk Race 3D"> 
-		  <p>Twerk Race 3D</p> 
-		</div> 
-		<div class="game-option" data-game="5"> 
-		  <img src="https://cdn.hamsterkombat.io/merge_away/image.webp" alt="Merge Away"> 
-		  <p>Merge Away</p> 
-		</div> 
-		<div class="game-option" data-game="3"> 
-		  <img src="https://cdn.hamsterkombat.io/my_clone_army/image.webp" alt="My Clone Army"> 
-		  <p>My Clone Army</p> 
-		</div> 
-		<div class="game-option" data-game="2"> 
-		  <img src="https://cdn.hamsterkombat.io/chain_cube/image.webp" alt="Chain Cube 2048"> 
-		  <p>Chain Cube 2048</p> 
-		</div> 
-		<div class="game-option" data-game="4"> 
-		  <img src="https://cdn.hamsterkombat.io/train_miner/image.webp" alt="Train Miner"> 
-		  <p>Train Miner</p> 
-		</div> 
-		<div class="game-option" data-game="1"> 
-		  <img src="https://cdn.hamsterkombat.io/bikeride/image.webp" alt="Bike Ride 3D"> 
-		  <p>Bike Ride 3D</p> 
-		</div> 
-	  </div> 
-	  <div class="form-group hidden" id="keyCountGroup"> <label for="keyCountSelect">pilih berapa kunci:</label> 
-		<div id="keyCountSelect" class="key-slider"> 
-		  <input type="range" min="1" max="100" value="1" id="keyRange"> <span id="keyValue">1</span> 
-		</div> 
-	  </div> <button id="startBtn" class="hidden">hasilkan kunci</button> 
-	  <div id="progressContainer" class="hidden"> 
-		<div class="progress-bar"> 
-		  <div id="progressBar"></div> 
-		</div> 
-		<p id="progressText">0%</p> 
-		<p id="progressLog">memulai...</p> 
-	  </div> 
-	  <div id="keyContainer" class="hidden"> 
-		<h2 id="generatedKeysTitle" class="hidden">hasilkan kunci</h2> 
-		<div id="keysList"></div> <button id="copyAllBtn" class="hidden">salin semua kunci</button> 
-	  </div> 
-	  <p id="keyCountLabel">jumlah kunci:</p> <button id="generateMoreBtn" class="hidden">hasilkan kunci lagi</button> 
-	  <p id="copyStatus" class="hidden">semua kunci tersalin</p> 
-	  <div class="footer"> 
-		<p>setiap 2 kali pakai akan ada jeda bos...</p> <button class="overlay-button" onclick="reloadPage()">segarkan</button> 
-	  </div> 
-	</div> 
-	<script src="hk21.js"></script> 
+	  <div class="form-group">
+		<label for="gameSelect">Select Game</label>
+		<select id="gameSelect">
+		  <option value="7">Polysphere</option>
+		  <option value="2">Twerk Race</option>
+		  <option value="3">MergeAway</option>
+		  <option value="4">My Clone Army</option>
+		  <option value="5">Chain Cube 2048</option>
+		  <option value="6">Train Miner</option>
+		  <option value="1">Riding Extreme 3D</option>
+		  <option value="8">Mow and Trim</option>
+		  <option value="9">Mud Racing</option>
+		</select>
+	  </div>
+	  <div class="form-group">
+		<label id="keyCountLabel" for="keyCountSelect">Number of keys:</label>
+		<select id="keyCountSelect">
+		  <option value="10">10</option>
+		  <option value="40">40</option>
+		  <option value="20">20</option>
+		  <option value="30">30</option>
+		  <option value="1">1</option>
+		  <option value="4">4</option>
+		</select>
+	  </div>
+	  <button id="startBtn">Generate Keys</button>
+	  <button id="downloadKeysBtn">Download Saved Keys</button>
+	  <button id="checkKeysBtn">Check Saved Keys</button>
+	  <textarea id="logArea" rows="10" readonly style="width: 100%; resize: none; font-size: 12px;"></textarea>
+
+	  <div id="progressContainer" class="hidden">
+		<div class="progress-bar">
+		  <div id="progressBar"></div>
+		</div>
+		<div id="progressText">0%</div>
+		<div id="progressLog">Starting...</div>
+		<div id="countdownContainer">
+		  <p>Next Step in: <span id="countdownTimer"></span> seconds</p>
+		</div>
+	  </div>
+	  <div id="keyContainer" class="hidden">
+		<h3 id="generatedKeysTitle" class="hidden">Generated Keys:</h3>
+		<div id="keysList"></div>
+		<button id="copyAllBtn" class="hidden">Copy All Keys</button>
+		<div id="copyStatus" class="hidden">Copied!</div>
+		<button id="generateMoreBtn">Generate More Keys</button>
+	  </div>
+	  <div class="mycodes">
+		<p>takes 5 - 10 minutes</p>
+	  </div>
+	  <div class="footer">
+	  </div>
+    </div>
+    <script src="script.js"></script>
   </body>
 </html>
