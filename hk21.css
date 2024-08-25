@@ -20,8 +20,135 @@ body {
 }
 
 h1 {
-    margin-bottom: 20px;
+    font-size: 16px;
+    color: blue;
+    position: absolute;
+    animation: moveRandom 10s infinite, shakeText 0.1s infinite;
 }
+
+@keyframes shakeText {
+    0%, 100% {
+        transform: translate(0, 0);
+    }
+    25% {
+        transform: translate(-2px, 2px);
+    }
+    50% {
+        transform: translate(2px, -2px);
+    }
+    75% {
+        transform: translate(-2px, -2px);
+    }
+}
+
+@keyframes moveRandom {
+    0% {
+        opacity: 1;
+        top: 50%;
+        left: 50%;
+    }
+    5% {
+        opacity: 0;
+        top: 50%;
+        left: 50%;
+    }
+    10% {
+        opacity: 1;
+        top: 40%;
+        left: 10%;
+    }
+    15% {
+        opacity: 0;
+        top: 40%;
+        left: 10%;
+    }
+    20% {
+        opacity: 1;
+        top: 90%;
+        left: 20%;
+    }
+    25% {
+        opacity: 0;
+        top: 90%;
+        left: 20%;
+    }
+    30% {
+        opacity: 1;
+        top: 70%;
+        left: 40%;
+    }
+    35% {
+        opacity: 0;
+        top: 70%;
+        left: 40%;
+    }
+    40% {
+        opacity: 1;
+        top: 10%;
+        left: 10%;
+    }
+    45% {
+        opacity: 0;
+        top: 10%;
+        left: 10%;
+    }
+    50% {
+        opacity: 1;
+        top: 80%;
+        left: 10%;
+    }
+    55% {
+        opacity: 0;
+        top: 80%;
+        left: 10%;
+    }
+    60% {
+        opacity: 1;
+        top: 30%;
+        left: 30%;
+    }
+    65% {
+        opacity: 0;
+        top: 30%;
+        left: 30%;
+    }
+    70% {
+        opacity: 1;
+        top: 40%;
+        left: 20%;
+    }
+    75% {
+        opacity: 0;
+        top: 40%;
+        left: 20%;
+    }
+    80% {
+        opacity: 1;
+        top: 60%;
+        left: 20%;
+    }
+    85% {
+        opacity: 0;
+        top: 60%;
+        left: 20%;
+    }
+    90% {
+        opacity: 1;
+        top: 10%;
+        left: 10%;
+    }
+    95% {
+        opacity: 0;
+        top: 10%;
+        left: 10%;
+    }
+    100% {
+        opacity: 1;
+        top: 20%;
+        left: 0%;
+    }
+}
+
 
 .form-group {
     margin-bottom: 15px;
