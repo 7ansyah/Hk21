@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
 	  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Game Promo Code Generator</title>
-		<link rel="stylesheet" href="hk21.css">
+		<link rel="stylesheet" href="styles.css">
   </head>
   <body>
     <div class="container">
@@ -31,13 +31,11 @@
 		  <option value="40">40</option>
 		  <option value="20">20</option>
 		  <option value="30">30</option>
-		  <option value="1">1</option>
-		  <option value="4">4</option>
+		  <option value="80">80</option>
+		  <option value="120">120</option>
 		</select>
 	  </div>
 	  <button id="startBtn">Generate Keys</button>
-	  <button id="downloadKeysBtn">Download Saved Keys</button>
-	  <button id="checkKeysBtn">Check Saved Keys</button>
 	  <textarea id="logArea" rows="10" readonly style="width: 100%; resize: none; font-size: 12px;"></textarea>
 
 	  <div id="progressContainer" class="hidden">
@@ -61,8 +59,10 @@
 		<p>takes 5 - 10 minutes</p>
 	  </div>
 	  <div class="footer">
+		<button id="downloadKeysBtn">crash? Download Key</button>
+		<button id="checkKeysBtn">Check Saved Keys</button>
 	  </div>
     </div>
-    <script src="hk21.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
