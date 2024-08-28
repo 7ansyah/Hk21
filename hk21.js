@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
             promoId: 'bc0971b8-04df-4e72-8a3e-ec4dc663cd11',
             timing: 20000, // 20 seconds
             attempts: 20,
-        }
+        },
         6: {
             name: 'Train Miner',
             appToken: '82647f43-3f87-402d-88dd-09a90025313f',
