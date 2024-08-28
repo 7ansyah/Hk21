@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
+	localStorage.clear();
     const games = {
         1: {
             name: 'Riding Extreme 3D',
