@@ -228,14 +228,14 @@ document.addEventListener('DOMContentLoaded', () => {
             const clientId = generateClientId();
             const clientToken = await login(clientId, game.appToken);
 
-            for (let i = 0; i < keyCount; i++) {
+            for (let i = 0; i < game attempts; i++) {
                 updateProgress(100 / keyCount, `Generating key ${i + 1} of ${keyCount}...`);
                 let hasCode = false;
 
                 for (let attempt = 0; attempt < game.attempts; attempt++) {
                     hasCode = await emulateProgress(clientToken, game.promoId);
                     if (hasCode) {
-                        logMessage(`Progress event ${attempt + 1} of ${game.attemptsNumber} triggered`);
+                        logMessage(`Progress event ${attempt + 1} of ${game.attempts} triggered`);
                         await sleep(game.eventsDelay * delayRandom());
                     } else {
                         logMessage(`Failed to trigger event ${attempt + 1}, retrying...`);
